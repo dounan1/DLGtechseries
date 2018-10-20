@@ -95,7 +95,7 @@ Step 5: Connect image recognition API with FlowXO:
   - Choose: Make a HTTP Request
   - ![image-20181020063853999](images/image-20181020063853999.png)
   - ![image-20181020063720384](images/image-20181020063720384.png)
-  - Put https://api.cloudsight.ai/v1/images in "Request URL"
+  - Write https://api.cloudsight.ai/v1/images in "Request URL"
   - Method: POST
   - Content Type: JSON
   - Data: Add these values
@@ -152,7 +152,7 @@ Step 9: Connect shopping API with FlowXO:
 - Create a new action at bottom: Make a HTTP Request
   - ![image-20181020071829604](images/image-20181020071829604.png)
   - In Request URL:
-    - Put: `http://api.shopstyle.com/api/v2/products?pid=uid9924-40373882-64`
+    - Write: `http://api.shopstyle.com/api/v2/products?pid=uid9924-40373882-64`
     - add &fts with tags from the image recognition result
       - &fts={{make_a_http_request.data__name}}
 - Create Send a Card Flow
